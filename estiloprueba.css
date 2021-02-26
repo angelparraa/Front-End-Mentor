@@ -1,0 +1,101 @@
+* {
+	font-family: arial;
+}
+
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+	background-color: rgb(27,161,173);
+	background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+	background-repeat: no-repeat, no-repeat;
+	background-position: right 50vw bottom 43vh, left 50vw top 50vh;
+	background-size: 800px 800px, 800px 800px;
+}
+
+.flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 95vh;
+}
+.fondo {
+	object-fit: cover;
+}
+
+.img-usuario {
+	border-radius: 50%;
+	border: 3px solid #fff;
+	margin-top: -53px;
+	background: #fff;
+}
+
+.tarjeta {
+	display: block;
+	background: #fff;
+	width: 330px;
+	border-radius: 5%;
+	overflow: hidden;
+	box-shadow: 0px 5px 5px #0004;
+	text-align: center;
+}
+
+p {
+	color: #aaa;
+	font-size: .7em;
+}
+.card-tittle p {
+	margin-top: 1px;
+}
+
+b {
+	color: #aaa;
+	padding: 4px;
+	font-size: 1em;
+	font-weight: 200;
+	margin-left: 4px;
+}
+
+.card-footer {
+	display: grid;
+	grid-template-areas: 
+	"followers likes photos";
+	margin: 10px;
+	margin-top: -8px;
+}
+.followers {
+	grid-area: followers;
+	align-self: start;
+}
+
+.likes {
+	grid-area: likes;
+
+}
+
+.photos {
+	grid-area: photos;
+}
+
+h3 {
+	margin-bottom: -5px;
+	font-size: 1em
+}
+
+h1 {
+	font-size: 1em;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 17px;
+}
+
+.london {
+	padding-top: 8px;
+}
+
+.p-h3 {
+	letter-spacing: 1.5px;
+}
